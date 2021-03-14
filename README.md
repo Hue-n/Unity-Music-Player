@@ -13,8 +13,7 @@ I built on what he taught in his tutorial by adding dynamic song titles and albu
 Try the player [here](https://hue-n.github.io/Unity-Music-Player/)!
 
 ### Music Credits:
- <br />
-Alan: Lead Game Designer, Art Director <br />
-Tofu: Star Composer, Technical Designer <br />
-Rada: Lead Artist, Lead Animator <br />
+Hue-n: Crystalization Cave, Challenge of the Stars <br />
+Ubitsoft, Rayman 3 Original Soundtrack: Curious Globox <br />
+Groove Armada: Madder <br />
 
