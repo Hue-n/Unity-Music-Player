@@ -64,7 +64,9 @@ public class Song : MonoBehaviour
         clipTitleText2.text = songList[currentTrack].GetComponent<Song>().songName;
 
     }
-
+    
+    ...
+    
     void ShowCurrentAlbumCover()
     {
         albumCover.GetComponent<Image>().sprite = songList[currentTrack].GetComponent<Song>().songImage;
