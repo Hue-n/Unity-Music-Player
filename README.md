@@ -8,7 +8,7 @@ His tutorial is here: https://www.youtube.com/watch?v=zpiwhC8zp4A <br />
 I built on what he taught in his tutorial by adding dynamic song titles and album covers.
 
 ### Resolution
-920 x 700px
+920 x 600px
 
 Try the player [here](https://hue-n.github.io/Unity-Music-Player/)!
 
