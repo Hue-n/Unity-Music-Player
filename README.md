@@ -19,7 +19,7 @@ Groove Armada: Madder <br />
 
 ### How Object-Oriented Programming was incorporated:
 
-= A "Song" class was created that holds the data for the song
+- A "Song" class was created that holds the data for the song
 ```C#
 public class Song : MonoBehaviour
 {
