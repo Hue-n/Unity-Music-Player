@@ -17,3 +17,56 @@ Hue-n: Crystalization Cave, Challenge of the Stars <br />
 Ubitsoft, Rayman 3 Original Soundtrack: Curious Globox <br />
 Groove Armada: Madder <br />
 
+### How Object-Oriented Programming was incorporated:
+
+= A "Song" class was created that holds the data for the song
+```C#
+public class Song : MonoBehaviour
+{
+    //Song Variables Here
+
+    public string songName;
+
+    public AudioClip song;
+
+    public int songID;
+
+    public Sprite songImage;
+}
+```
+
+- The Audio Manager then creates an array of these Songs and parses their data in their respective methods.
+- The array is accessed through the "currentTrack" int.
+```C#
+    #region Variables
+    public GameObject[] songList; //Tracklist
+    
+    ...
+    
+    public void NextTitle() //add next song into queue
+    {
+        source.Stop();
+        currentTrack++;
+
+        if (currentTrack > songList.Length - 1)
+        {
+            currentTrack = 0;
+        }
+        source.clip = songList[currentTrack].GetComponent<Song>().song;
+        source.Play();
+        
+    ...
+    
+        void ShowCurrentTitle()
+    {
+        clipTitleText.text = "♪ " + songList[currentTrack].GetComponent<Song>().songName;
+        fullLength = (int)source.clip.length;
+        clipTitleText2.text = songList[currentTrack].GetComponent<Song>().songName;
+
+    }
+
+    void ShowCurrentAlbumCover()
+    {
+        albumCover.GetComponent<Image>().sprite = songList[currentTrack].GetComponent<Song>().songImage;
+    }
+```
